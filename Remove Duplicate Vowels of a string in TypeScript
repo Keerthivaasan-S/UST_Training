@@ -1,0 +1,21 @@
+let ctr:String = 'correspondence';
+let dst: number[]= Array(26).fill(0);
+let a:string = '';
+for(let i=0;i<ctr.length;i++)
+{
+    let x:number = ctr.charCodeAt(i)-'a'.charCodeAt(0);
+    dst[x]=dst[x]+1;
+}
+for(let i=0;i<ctr.length;i++)
+{
+    let temp = ctr.charCodeAt(i);
+    if(dst[temp-97]==1 )
+    {
+        a+=ctr.charAt(i);
+    }
+    else if(ctr.charAt(i)!='a'&&ctr.charAt(i)!='e'&&ctr.charAt(i)!='i'&&ctr.charAt(i)!='o'&&ctr.charAt(i)!='u')
+    {
+        a+=ctr.charAt(i);
+    }
+}
+console.log(a);
