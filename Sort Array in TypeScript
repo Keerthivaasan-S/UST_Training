@@ -1,0 +1,13 @@
+let nu1:number[] = [8,2,5,1,4,9,7,6,3];
+for(let i=0;i<nu1.length-1;i++){
+    for(let j=i+1;j<nu1.length;j++)
+    {
+        if(nu1[i]>nu1[j])
+        {
+            let temp:number =nu1[j];
+            nu1[j]=nu1[i];
+            nu1[i]=temp;
+        }
+    }
+}
+console.log(nu1);
