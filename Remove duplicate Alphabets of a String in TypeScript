@@ -1,0 +1,16 @@
+let btr:String = 'correspondence';
+let dist: number[]= Array(26).fill(0);
+let z:string = '';
+for(let i=0;i<btr.length;i++)
+{
+    let x:number = btr.charCodeAt(i)-'a'.charCodeAt(0);
+    dist[x]=dist[x]+1;
+}
+for(let i=0;i<btr.length;i++)
+{
+    if(dist[btr.charCodeAt(i)-97]==1)
+    {
+        z+=btr.charAt(i);
+    }
+}
+console.log(z);
