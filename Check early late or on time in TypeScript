@@ -1,0 +1,25 @@
+let time:string = "9:20";
+let hr = time.split(":");
+if(hr[0]=='9')
+{
+    if(hr[1]=='30')
+    {
+        console.log(`ON TIME`);
+    }
+    else if(hr[1]<'30')
+    {
+        console.log(`EARLY`);
+    }
+    else if(hr[1]<'60' && hr[1]>'30')
+    {
+        console.log(`Late`);
+    }
+}
+else if(hr[0]<'9')
+{
+    console.log(`EARLY`);
+}
+else if(hr[0]>'9')
+{
+    console.log(`LATE`);
+}
