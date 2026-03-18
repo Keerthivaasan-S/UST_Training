@@ -1,0 +1,19 @@
+let height: number = 1.85;
+let weight: number = 80.4;
+let BMI: number = weight/(height*weight) ; 
+if(BMI<18.5)
+{
+    console.log("under weight");
+}
+else if(BMI>18.5 && BMI<25)
+{
+    console.log("normal weight");;
+}
+else if(BMI>=25 && BMI <30)
+{
+    console.log("over weight");
+}
+else
+{
+    console.log("obese");
+}
