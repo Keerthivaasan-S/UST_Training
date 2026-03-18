@@ -1,0 +1,7 @@
+let str:String = "TypeScript";
+let rtr:String = "";
+for(let i = str.length;i>=0;i--)
+{
+    rtr+=str.charAt(i);
+}
+console.log(rtr);
